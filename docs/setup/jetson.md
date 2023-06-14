@@ -227,7 +227,7 @@ However, because Create® 3 expects the client device to have a specific IP addr
 
             sudo bash -c 'echo "192.168.186.3" > /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf'
 
-    2. Then, modify the "nv-l4t-device-mode-runtime" service script (`/opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode-runtime-start.sh`). The complete file is [here](data/nv-l4t-usb-device-mode-runtime-start.sh).
+    2. Then, replace the "nv-l4t-device-mode-runtime" service script located here:`/opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode-runtime-start.sh` with this modified file [here](data/nv-l4t-usb-device-mode-runtime-start.sh).
      <br>
 
 2. Connect USB cable from Create® 3 robot to the upstream USB port of Jetson. Then check if the static IP address is set by issuing `ifconfig` command.
