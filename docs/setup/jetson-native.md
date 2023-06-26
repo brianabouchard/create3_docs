@@ -57,7 +57,7 @@ There are two main methods of installing ROS2 on the Jetson Nano. The primary an
 
 ** EXPLAIN Q ENGINEERING INSTRUCTIONS HERE ** 
 
-### Instructions for flashing Docker with Q Engineering Image
+### Instructions for flashing Nano with Q Engineering Image
 
 1. Download the image from the github [here](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image)
 2. Write to the image using the following sources
