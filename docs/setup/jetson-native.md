@@ -55,8 +55,6 @@ If running into issues with installing JetPack 4, check the following:
 
 There are two main methods of installing ROS2 on the Jetson Nano. The primary and recommended method is building from a pre flashed Ubuntu image, and is described below 
 
-** EXPLAIN Q ENGINEERING INSTRUCTIONS HERE ** 
-
 ### Instructions for flashing Nano with Q Engineering Image
 
 1. Download the image from the github [here](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image)
