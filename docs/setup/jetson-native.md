@@ -51,8 +51,6 @@ If running into issues with installing JetPack 4, check the following:
 
 ## ROS 2 Setup on Jetson
 
-### Use pre-built ROS 2 Docker container
-
 There are two main methods of installing ROS2 on the Jetson Nano. The primary and recommended method is building from a pre flashed Ubuntu image, and is described below 
 
 ### Instructions for flashing Nano with Q Engineering Image
