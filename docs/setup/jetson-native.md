@@ -143,7 +143,7 @@ If you have your Jetson connected to a display monitor ("Monitor-attached" Mode)
 
 > If you cannot easily attach a display monitor to your Jetson, check [this guide](https://jetbot.org/master/software_setup/wifi_setup.html#headless-mode) for "Headless Mode".
 
-#### Test inside Jetson ROS container
+#### Test ROS2
 
 1. Check to ensure Create® 3 topics appear
 
@@ -251,13 +251,7 @@ However, because Create® 3 expects the client device to have a specific IP addr
 
         sudo mv /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf /opt/nvidia/l4t-usb-device-mode/IP_ADDRESS_FOR_CREATE3_ROBOT.conf.bak
 
-#### Test the USB link inside the container
-
-1. Set the `ROS_DOMAIN_ID` environmental variable 
-
-    Once you are in container;
-
-        export ROS_DOMAIN_ID=32
+#### Test the USB link
 
 1. Set the default network interface by setting Cyclone DDS configuration.
 
