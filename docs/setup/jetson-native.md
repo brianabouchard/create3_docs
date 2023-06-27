@@ -83,7 +83,7 @@ There are two main methods of installing ROS2 on the Jetson Nano. The primary an
     - After Etcher finishes, Windows may let you know it doesn’t know how to read the SD Card. Just click Cancel and remove the microSD card.
 3. Insert the SD card into the Jetson, power on your computer display and connect it, connect the USB keyboard and mouse, and connect the provided power supply. The Jetson Orin Nano Developer Kit will power on and boot automatically.
 4. Follow the Q Engineering instructions for updating the Ubuntu version found [here](https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html)
-5. Now, with Ubuntu 20.04 operational, 
+5. Now, with Ubuntu 20.04 operational, log in
 6. Once logged in, check to ensure that you are using a UTF-8 locale by typing
 
         echo $LANG
