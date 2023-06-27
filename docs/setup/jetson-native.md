@@ -83,7 +83,42 @@ There are two main methods of installing ROS2 on the Jetson Nano. The primary an
     - After Etcher finishes, Windows may let you know it doesn’t know how to read the SD Card. Just click Cancel and remove the microSD card.
 3. Insert the SD card into the Jetson, power on your computer display and connect it, connect the USB keyboard and mouse, and connect the provided power supply. The Jetson Orin Nano Developer Kit will power on and boot automatically.
 4. Follow the Q Engineering instructions for updating the Ubuntu version found [here](https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html)
-5. Now, with Ubuntu 20.04 operational, follow the ROS2 guide for building ROS2 from [source](https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html)
+5. Now, with Ubuntu 20.04 operational, 
+6. Once logged in, check to ensure that you are using a UTF-8 locale by typing
+
+        echo $LANG
+   and ensuring "UTF-8" is at the end of the returned string.
+
+7. Execute the following blocks of commands to install ROS 2[^2]:
+
+        sudo apt update && sudo apt install -y curl gnupg2 lsb-release build-essential git cmake
+then
+
+        sudo curl -ksSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+        sudo apt update && sudo apt install -y ros-galactic-ros-base python3-colcon-common-extensions python3-rosdep ros-galactic-rmw-fastrtps-cpp ros-galactic-rmw-cyclonedds-cpp ros-galactic-irobot-create-msgs
+finally
+
+        echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
+        echo "export _colcon_cd_root=/opt/ros/galactic/" >> ~/.bashrc
+        echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
+        echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
+
+8. At this point, we recommend setting your default RMW (ROS 2 middleware). The RMW you set here has to match the RMW on your robot, which can be found from its Application Configuration page. More detail on RMW can be found [here](../xml-config). Right now, the Create® 3 robot supports `rmw_cyclonedds_cpp` and `rmw_fastrtps_cpp`. The default for Galactic is `rmw_cyclonedds_cpp`. Depending on your robot's RMW implementation, type one of the following:
+
+        echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+or
+
+        echo "export RMW_IMPLEMENTATION=rmw_fastrtps_cpp" >> ~/.bashrc
+
+9. Finally, either log out and log back in, or simply
+
+        source ~/.bashrc
+
+10. If both your computer and robot are on the same network, you should now be able to test things out with a `ros2 topic list`.
+If this does not work, please refer to [ROS 2 Network Configuration](../xml-config/) for further configuration ideas.
+A full Create® 3 API description can be found [here](../../api/ros2).
+
 
  
 ## Communication mode 
