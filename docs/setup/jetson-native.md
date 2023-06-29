@@ -41,7 +41,7 @@
 
 Only JetPack 4 is available for the Jetson Nano™. It is highly recommended to read through the getting started document for your NVIDIA® Jetson™ developer kit before beginning:
 
-* [Get Started With Jetson Nano Developer Kit]([https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit))
+* [Get Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
 If running into issues with installing JetPack 4, check the following: 
 - The Nano will not power on if the type of power supply you are using for the micro usb is not correct. You should use a 5V 2A block 
