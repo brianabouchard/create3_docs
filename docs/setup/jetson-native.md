@@ -43,15 +43,17 @@ Only JetPack 4 is available for the Jetson Nano™. It is highly recommended to 
 
 * [Get Started With Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
-If running into issues with installing JetPack 4, check the following: 
-- The Nano will not power on if the type of power supply you are using for the micro usb is not correct. You should use a 5V 2A block 
-- Nano will not turn on if jumper is still attached as such![](./data/jumper-1.png)
+If running into issues starting the JetPack 4, check the following: 
+- The Nano will not power on if the type of power supply you are using for the micro usb is not correct.
+You should use a 5V 2A block. 
+- The Nano will not turn on if jumper is still attached as such
+![](./data/jumper-1.png)
 
 ## Setup Overview
 
 ## ROS 2 Setup on Jetson
 
-There are two main methods of installing ROS2 on the Jetson Nano. The primary and recommended method is building from a pre flashed Ubuntu image, and is described below 
+There are two main methods of installing ROS2 on the Jetson Nano. The primary and recommended method is installing natively on a pre-configured Ubuntu image, and is described below.
 
 ### Instructions for flashing Nano with Q Engineering Image
 
