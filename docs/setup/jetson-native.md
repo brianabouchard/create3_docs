@@ -30,7 +30,7 @@
 #
 -->
 
-# Connect Create® 3 to NVIDIA® Jetson™ and set up ROS 2 Galactic
+# Connect Create® 3 to NVIDIA® Jetson Nano™ and set up ROS 2 Galactic
 
 !!! important
     **This is community-submitted content. Please feel welcome to submit PRs for additions or corrections.**
@@ -39,7 +39,7 @@
 !!! attention
     **These directions are written for someone with experience with embedded Linux and basic embedded computers.**
 
-Only JetPack 4 is available for the Jetson Nano. It is highly recommended to read through the getting started document for your NVIDIA® Jetson™ developer kit before beginning:
+Only JetPack 4 is available for the Jetson Nano™. It is highly recommended to read through the getting started document for your NVIDIA® Jetson™ developer kit before beginning:
 
 * [Get Started With Jetson Nano Developer Kit]([https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit))
 
