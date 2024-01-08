@@ -90,7 +90,8 @@ nav:
           - Software Config: setup/navqplus.md
         - NVIDIA® Jetson™:
           - Hookup Guide: hw/jetson_hookup.md
-          - Software Config: setup/jetson.md
+          - JetPack 4 Config: setup/jetson-jetpack4.md
+          - JetPack 5 Config: setup/jetson-jetpack5.md
         - Raspberry Pi®:
           - Hookup Guide: hw/rpi_hookup.md
           - Galactic Config: setup/pi4galactic.md
