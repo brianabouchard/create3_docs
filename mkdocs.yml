@@ -33,7 +33,7 @@ extra:
     provider: google
     property: G-9QX6GHMSD7
 
-copyright: Copyright &copy; 2021-2023 iRobot Corporation. ​​All Rights Reserved.
+copyright: Copyright &copy; 2021-2024 iRobot Corporation. ​​All Rights Reserved.
 
 markdown_extensions:
   - admonition
@@ -74,6 +74,8 @@ nav:
         - Restart ntpd: webserver/restart-ntpd.md
         - Set Wired Subnet: webserver/set-wired-subnet.md
         - Override RMW Profile: webserver/rmw-profile-override.md
+        - Forget Wi-Fi Network: webserver/forget-wifi.md
+        - Override wpa_supplicant: webserver/wpa-supp-override.md
       - About: webserver/about.md
     - Setup:
       - Connect to Wi-Fi: setup/provision.md
@@ -99,6 +101,7 @@ nav:
       - Fast DDS Discovery Server: setup/discovery-server.md
     - APIs:
       - ROS 2 Interface: api/ros2.md
+      - Moving the Robot: api/moving-the-robot.md
       - Docking: api/docking.md
       - Drive Goals: api/drive-goals.md
       - Hazards: api/hazards.md
@@ -109,6 +112,25 @@ nav:
       - Wall Follow: api/wall-follow.md
     - Simulator:
       - Using the Simulator: sim/setup.md
+    - Lessons:
+      - Create 3 Basics: lessons/getting-started.md
+      - Getting started with ROS 2:
+        - Overview: lessons/ros2/overview.md
+        - Intro to ROS 2:
+          - Working with the CLI: lessons/ros2/intro/working-with-the-cli.md
+          - Writing Pubs and Subs: lessons/ros2/intro/writing-pubs-and-subs.md
+          - Writing Action Clients: lessons/ros2/intro/writing-action-clients.md
+          - Creating Packages: lessons/ros2/intro/creating-packages.md
+          - Serial Communication: lessons/ros2/intro/serial-communication.md
+        - Teleop Twist: lessons/ros2/teleop-twist.md
+      - Using BLE with Python:
+        - Python Web Playground: lessons/pwp/web-playground.md
+        - Robot Dance Recital: lessons/pwp/robot-dance-recital.md
+        - Light Painting: lessons/pwp/light-painting.md
+        - Sound Off, 1-2: lessons/pwp/sound-off-1-2.md
+        - C3, Phone Home: lessons/pwp/c3-phone-home.md
+        - Integrating AirTable: lessons/pwp/integrating-airtable.md
+        - Python Cheat Sheets: lessons/pwp/cheat-sheets.md
     - Software Examples:
       - Actuators via CLI: examples/actuators-cli.md
       - Sensors via CLI: examples/sensors-cli.md
@@ -116,7 +138,7 @@ nav:
     - Firmware Releases:
       - Overview: releases/overview.md
       - Galactic:
-        - G.5.2: releases/g_5_2.md
+        - G.5.4: releases/g_5_4.md
         - Older:
           - G.1.1: releases/g_1_1.md
           - G.2.2: releases/g_2_2.md
@@ -126,11 +148,20 @@ nav:
           - G.4.4: releases/g_4_4.md
           - G.4.5: releases/g_4_5.md
           - G.5.1: releases/g_5_1.md
+          - G.5.2: releases/g_5_2.md
+          - G.5.3: releases/g_5_3.md
       - Humble:
-        - H.2.2: releases/h_2_2.md
+        - H.2.6: releases/h_2_6.md
         - Older:
           - H.0.0: releases/h_0_0.md
           - H.1.0: releases/h_1_0.md
           - H.1.1: releases/h_1_1.md
           - H.1.2: releases/h_1_2.md
           - H.2.1: releases/h_2_1.md
+          - H.2.2: releases/h_2_2.md
+          - H.2.3: releases/h_2_3.md
+          - H.2.4: releases/h_2_4.md
+          - H.2.5: releases/h_2_5.md
+      - Iron:
+        - I.0.0: releases/i_0_0.md
+    - FAQ: faq/faq.md
