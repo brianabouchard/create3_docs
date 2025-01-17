@@ -1,8 +1,5 @@
 # Install ROS 2 Humble with Create 3 Messages on an Ubuntu 22.04 Machine
 
-!!! note
-    As of March 2023, use of Galactic is recommended, as it is more performant than Humble on Create 3.
-
 ## Before you start
 These directions should work on a machine natively running Ubuntu[^1] 22.04, as well as in a virtualized container within another operating system.
 Note that there might be some network setup required if in a virtualized container; for example, RMWs seem to like running in a bridged network configuration rather than a NATted one.
@@ -33,7 +30,10 @@ If it does not, execute the following:
 
         sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository universe
 
-1. Add the ROS 2[^2] apt repository, first by authorizing the Open Robotics GPG key
+1. Add the ROS 2[^2] apt repository, first by installing curl
+
+        sudo apt install curl
+then authorizing the Open Robotics GPG key
 
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 and then adding the repository to your computer's sources list

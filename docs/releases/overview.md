@@ -19,6 +19,8 @@ One exception is that beta features may be added in minor releases.
 The latest stable release can be found at
 [http://edu.irobot.com/create3-latest-fw](http://edu.irobot.com/create3-latest-fw).
 
+The latest stable Iron release can be found at
+[http://edu.irobot.com/create3-iron-latest-fw](http://edu.irobot.com/create3-iron-latest-fw).
 The latest stable Humble release can be found at
 [http://edu.irobot.com/create3-humble-latest-fw](http://edu.irobot.com/create3-humble-latest-fw).
 The latest stable Galactic release can be found at
@@ -26,14 +28,17 @@ The latest stable Galactic release can be found at
 
 Downloads of a particular version can be found on each individual release page.
 
-!!! note
-    As of March 2023, use of Galactic is recommended, as it is more performant than Humble on Create 3.
-
 ## Releases
 
-### Humble
+### Iron
+* [I.0.0](../i_0_0) (iron-latest, latest)
 
-* [H.2.2](../h_2_2) (humble-latest)
+### Humble
+* [H.2.6](../h_2_6) (humble-latest)
+* [H.2.5](../h_2_5)
+* [H.2.4](../h_2_4)
+* [H.2.3](../h_2_3)
+* [H.2.2](../h_2_2)
 * [H.2.1](../h_2_1)
 * [H.1.2](../h_1_2)
 * [H.1.1](../h_1_1)
@@ -41,7 +46,9 @@ Downloads of a particular version can be found on each individual release page.
 * [H.0.0](../h_0_0)
 
 ### Galactic
-* [G.5.2](../g_5_2) (galactic-latest, latest)
+* [G.5.4](../g_5_4) (galactic-latest)
+* [G.5.3](../g_5_3)
+* [G.5.2](../g_5_2)
 * [G.5.1](../g_5_1)
 * [G.4.5](../g_4_5)
 * [G.4.4](../g_4_4)
